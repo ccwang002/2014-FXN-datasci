@@ -1,21 +1,32 @@
 .. contents::
     :local:
-    :depth: 2
+    :depth: 3
     :backlinks: none
 
-*****
-DRAFT
-*****
+******
+AGENDA
+******
 
 Abstract
 ========
+
+本講題首先簡介資料科學，接著針對處理流程中每個階段，討論常見的步驟與可能問題。接著將對數據量多、視覺化議題進行專題敘述。最後以 Python 和 R 語言介紹常用的工具與實際分析流程。
+
+- Data science introduction
+- Data processing workflow
+    - ETL
+    - Analysis
+    - Visualization
+    - Report
+- Big data issue
+- Back on visualization
+- Data Sci-related society introduction
+- Data Analysis in Python and R
 
 
 Data Science 簡介
 =================
 
-Reference
----------
 
 - |DataSci-Intro-Johnson|_ by Johnson Hsieh, DSP
 
@@ -35,10 +46,33 @@ Reference
     - slidify
     - knitr
 
-Deal with Large Data
---------------------
+Big(Large) Data
+===============
+
+- `Big data is like teenage sex <fb.me/1r54f62oU>`_
+
+Hadoop / Spark
+--------------
 
 - HDF5 https://www.youtube.com/watch?v=wZEFoVUu8h0
+
+
+Data Visualization
+==================
+
+Abstraction
+-----------
+
+- Nature graphics http://naturegraphics.tumblr.com/
+
+Interactive
+-----------
+
+- |montyhall-vis|_
+- hard to understand: `We Need to Talk About TED`__
+
+.. |montyhall-vis| replace:: Monty Hall Explained
+.. _montyhall-vis: http://www.bratton.info/projects/talks/we-need-to-talk-about-ted/
 
 Data Science 相關社群
 =====================
@@ -58,8 +92,14 @@ DSP 資料科學計畫
 - Commercial training program
 
 
-Reference
-=========
+.. >>>>>>>> END OF AGENDA <<<<<<<<
+
+*********
+REFERENCE
+*********
+
+Example
+=======
 
 有趣的例子
 ----------
@@ -121,8 +161,8 @@ Reference
 .. |google-ddos| replace:: Google 公布 DDoS 網路攻擊即時地圖
 .. _google-ddos: http://technews.tw/2013/10/22/google-digital-attack-map/
 
-Referenc for Myself
--------------------
+For Myself
+----------
 
 - `The Type of Learners`__
 - `Why Python is Better than Matlab for Scientific Software`__
