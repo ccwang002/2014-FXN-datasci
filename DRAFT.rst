@@ -72,7 +72,9 @@ Interactive
 - hard to understand: `We Need to Talk About TED`__
 
 .. |montyhall-vis| replace:: Monty Hall Explained
-.. _montyhall-vis: http://www.bratton.info/projects/talks/we-need-to-talk-about-ted/
+.. _montyhall-vis: http://blog.vctr.me/monty-hall/
+
+__ http://www.bratton.info/projects/talks/we-need-to-talk-about-ted/
 
 Data Science 相關社群
 =====================
@@ -91,6 +93,13 @@ DSP 資料科學計畫
 - http://datasci.co
 - Commercial training program
 
+
+台灣資料科學愛好者年會 2014
+===========================
+
+- Aug 30-31, 2014 @人社館
+- http://twconf.data-sci.org/
+- 贊助請直接與我聯絡，會再提供窗口
 
 .. >>>>>>>> END OF AGENDA <<<<<<<<
 
@@ -112,6 +121,7 @@ Example
 - |plane-search|_
 - |helicopter-signal|_
 - |google-home-number|_
+- |world-cup-pred|_
 
 .. |surv-oscar| replace:: Survival analysis of Oscar Nominees
 .. _surv-oscar: http://www.tandfonline.com/doi/abs/10.1198/tast.2010.08259
@@ -137,6 +147,10 @@ Example
 .. |google-home-number| replace:: How Google Cracked House Number Identification in Street View (MIT Tech Rev)
 .. _google-home-number: http://www.technologyreview.com/view/523326
 
+.. |world-cup-pred| replace:: Prediction model for the FIFA World Cup 2014
+.. _world-cup-pred: http://grollchristian.wordpress.com/2014/06/12/world-cup-2014-prediction/
+
+
 視覺化例子
 ----------
 
@@ -145,6 +159,7 @@ Example
 - |highway-traffic|_
 - |fb-princeton|_
 - |google-ddos|_
+- |world-cup-vis|_
 
 .. |myueh-d3js| replace:: 回顧與展望 李慕約（2013-2014）
 .. _myueh-d3js: http://muyueh.com/1314/
@@ -160,6 +175,9 @@ Example
 
 .. |google-ddos| replace:: Google 公布 DDoS 網路攻擊即時地圖
 .. _google-ddos: http://technews.tw/2013/10/22/google-digital-attack-map/
+
+.. |world-cup-vis| replace::  Simple Analysis of a Few Aspects of the Wikipedia World Cup 2014 Squads Data
+.. _world-cup-vis: http://rscriptsandtips.blogspot.tw/2014/05/simple-analysis-of-few-aspects-of.html
 
 For Myself
 ----------
