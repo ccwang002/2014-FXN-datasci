@@ -76,6 +76,22 @@ Interactive
 
 __ http://www.bratton.info/projects/talks/we-need-to-talk-about-ted/
 
+Demo using Python and R
+=======================
+
+Pandas
+------
+
+R ggplot2
+---------
+
+Orange
+------
+
+pyR
+---
+
+
 Data Science 相關社群
 =====================
 
