@@ -23,6 +23,27 @@ Abstract
 - Data Sci-related society introduction
 - Data Analysis in Python and R
 
+ETL
+===
+
+- g0v
+- 分身伐樹
+- 服貿詞頻
+- 鄉民 OCR (用的是 PHP)
+- 找你寫得順的資料就好
+- scrapy selenium
+- leave Big Data
+
+Analysis (Model)
+================
+
+- all model is wrong
+- statistics, machine learning
+- ML roadmap(scikit-learn)
+- Evaluate model (cross validation/ train-test data)
+- Update data
+- dimension reduction
+
 
 Data Science 簡介
 =================
