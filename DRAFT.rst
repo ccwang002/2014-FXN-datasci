@@ -34,6 +34,7 @@ Data Science 簡介
 .. _DataSci-Intro-Johnson: http://www.slideshare.net/euler96/ss-35513599
 
 
+
 資料處理流程
 ============
 
@@ -81,6 +82,9 @@ Interactive
 
 __ http://www.bratton.info/projects/talks/we-need-to-talk-about-ted/
 
+
+- FBI Crime Statistics http://nbviewer.ipython.org/github/ChrisBeaumont/crime/blob/master/glue_plotly_fbi.ipynb
+
 Demo using Python and R
 =======================
 
@@ -92,6 +96,9 @@ R ggplot2
 
 Orange
 ------
+
+開上次的 VM 來講
+
 
 pyR
 ---
@@ -162,7 +169,7 @@ Example
 .. |plane-search| replace:: Modeling the Last Flight of MH370 with a Markov Chain Monte Carlo Method (by Conor L. Myhrvold)
 .. _plane-search: http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V3.ipynb
 
-.. |helicopter-signal| replace:: http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html
+.. |helicopter-signal| replace:: Mystery signal from a helicopter
 .. _helicopter-signal: http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html
 
 .. |google-home-number| replace:: How Google Cracked House Number Identification in Street View (MIT Tech Rev)

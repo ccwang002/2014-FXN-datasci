@@ -45,6 +45,14 @@
       margin-bottom: 0px;
     }
 
+    p.ref {
+      position: absolute;
+      bottom: 0px;
+      right: 100px;
+      text-align: right;
+      font-size: 12pt;
+    }
+
     ul.tighter {
       margin-bottom: 25px;
     }
@@ -108,12 +116,11 @@
     <!-- Header in overview -->
     <header class="caption">
       <div style="overflow: auto; vertical-align: middle; position: relative;">
-        <img style="float: left; padding-right: 30px; width: 150px;" src="pics/twR_logo.png" alt="">
         <div style="">
           <h1>
             Data Science Introduction
           </h1>
-          <p style="line-height: 32px; padding-top:15px;">王亮博（亮亮）2014-06-xx</p>
+          <p style="line-height: 32px; padding-top:15px;">王亮博（亮亮）2014-06-25</p>
           <p style="line-height: 32px;">From Taiwan R User Group, more info on <a href="http://www.meetup.com/Taiwan-R/" target="_blank">Meetup</a>.</p>
         </div>
       </div>
@@ -122,7 +129,7 @@
 
     <!-- Cover slide -->
     <section id="cover" class="slide cover w"><div>
-        <h3>Foxconn, 2014-06-xx</h3>
+        <h3>Foxconn, 2014-06-25</h3>
         <h2>
           Data Science Introduction<br>
           R/Python/Vis</h2>
@@ -192,18 +199,15 @@
     </section>
 
     <section id="about-me" class="slide"><div>
-        <h2>About Me</h2>
+        <h2 class="tighter">About Me</h2>
         <ul>
           <li>Master student at <br />
             Bioinfo &amp; Biostat Core Lab, NTU CGM</li>
           <li>R / Python. Learning to speak DNA</li>
-          <li>Taiwan R (MLDM) co-organizer</li>
-          <li>PyCon APAC 2014 staff and speaker of
-            <ul>
-              <li><a href="http://blog.liang2.tw/2014-pyR-stat/">Statistics in Python with R</a></li>
-              <li><a href="http://blog.liang2.tw/2014-handy-dist-computing/">Handy Parallel(Distributed)<br>Computing in Python</a></li>
-            </ul>
-          </li>
+          <li>Co-organizer of <a href="http://www.meetup.com/Taiwan-R/">Taiwan R User Group</a></li>
+          <li>Speaker of <a href="http://www.meetup.com/Taipei-py/">Taipei.py</a></li>
+          <li>Speaker of Taiwan R Conf 2013,<br>PyCon APAC 2014,<br>Chian R Conf (Beijing) 2014</li>
+          <li>More on my <a href="http://www.linkedin.com/in/liangbowang">Linkedin</a></li>
         </ul>
         <img id="protrait" src="pics/me.jpg" alt="">
       </div>
@@ -216,8 +220,38 @@
       </style>
     </section>
 
+    <section id="qr-code" class="slide"><div>
+        <p class="inline">Slide on <a href="http://blog.liang2.tw/2014-FXN-datasci/">http://blog.liang2.tw/2014-FXN-datasci/</a></p>
+        <p class="inline" align="center"><img height="450" class="center" src="pics/qrcode.svg" alt=""></p>
+    </div></section>
+
+    <section id="grad" class="slide"><div>
+        <img height="450" src="pics/thesis.jpg" alt="">
+    </div></section>
+
+    <section id="dna-cloud" class="slide twocol-ll"><div>
+        <div class="left"><img src="pics/DNA_Cloud.jpg" alt=""></div>
+        <div class="right">
+          <ul>
+            <li>Now in collaboration on DNA Cloud with FXN</li>
+            <li>So pretty much I am just a researcher at <br>beginner level</li>
+            <li>May view some aspects quite <i>differently</i> from yours</li>
+          </ul>
+        </div>
+    </div></section>
+
+    <section id="agenda" class="slide"><div>
+      <h2>Agenda</h2>
+      <ul>
+        <li><span class="red">First part: data science introduction</span></li>
+        <li><span class="red">Second part: realistic way to do data sci in Python and R</span></li>
+        <li>I am not good at talking something <i>general</i>, or <i>abstract</i></li>
+        <li>To keep you awake, many examples are provided in each section</li>
+      </ul>
+    </div></section>
+
     <section id="why-cover" class="slide cover w" ><div>
-        <h2>Why and how?</h2>
+        <h2>Data Science Intro</h2>
         <img src="pics/mid.jpg" alt="">
       </div>
       <style>
@@ -234,6 +268,97 @@
         }
       </style>
     </section>
+
+    <section id="data-sci-note" class="slide"><div>
+        <p class="tighter">This part is heavily adapted from <a href="http://www.slideshare.net/euler96/ss-35513599">Johnson's talk in DSP</a>.</p>
+        <img src="pics/datasci_program.png" height="400" alt="">
+    </div></section>
+
+    <section id="datasci-intro-ex" class="slide"><div>
+        <h2>Explained by examples</h2>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/TCKRe4jJ0Qk" frameborder="0"></iframe>
+        <p class="inline next">What can you find from this helicop for car chasing video?</p>
+    </div></section>
+
+    <section id="data-sci-ex-heli" class="slide"><div>
+      <h2>Discovery by Oona Räisänen</h2>
+      <img src="pics/ex-helicop-waveform.png" width="100%" alt="">
+      <p class="ref">From <a href="http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html">http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html</a></p>
+    </div></section>
+
+    <section id="data-sci-ex-heli-contd" class="slide"><div>
+      <img src="pics/ex-helicop-bitcoding.png" width="100%" alt="">
+      <p>The wave pattern turns out to be some data coding, with most part repeating.
+        <span class="next">Location? Video timestamp? Camera direction?</span></p>
+      <p class="ref">From <a href="http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html">http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html</a></p>
+    </div></section>
+
+
+    <section id="data-sci-ex-heli-comp" class="slide"><div>
+      <img src="pics/ex-helicop-location.png" width="100%" alt="">
+      <p class="ref">From <a href="http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html">http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html</a></p>
+    </div></section>
+
+    <section id="data-sci-ex-heli-trace" class="slide"><div>
+      <p class="inline">Map full trace on map. Later decodes into exact GPS locations</p>
+      <img src="pics/ex-helicop-choptrace.png" width="85%" alt="">
+      <p class="ref">From <a href="http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html">http://www.windytan.com/2014/02/mystery-signal-from-helicopter.html</a></p>
+    </div></section>
+
+    <section id="data-sci-ex-worldcup" class="slide"><div>
+        <h2 class="tighter">Another example on WorlCup</h2>
+        <img src="pics/worldcup_goal.jpg" width="80%" alt="">
+    </div></section>
+
+    <section id="worlcup-pvalue" class="slide"><div>
+      <img src="pics/worldcup_pvalue.jpg" alt="">
+      <p class="ref"><a href="http://grollchristian.wordpress.com/2014/06/12/world-cup-2014-prediction/">http://grollchristian.wordpress.com/2014/06/12/world-cup-2014-prediction/</a></p>
+    </div></section>
+
+    <section id="world-matchtree" class="slide twocol-ll"><div>
+      <div class="left">
+          <img src="pics/worldcup_matchtree.jpg" width="90%" alt="">
+          <p class="ref"><a href="http://grollchristian.wordpress.com/2014/06/12/world-cup-2014-prediction/">http://grollchristian.wordpress.com/2014/06/12/world-cup-2014-prediction/</a></p>
+      </div>
+      <div class="right next">
+        <ul>
+          <li>Posted on Jun 12</li>
+          <li>Correct?</li>
+          <li>Spain and UK have packed up</li>
+          <li>So prediction is wrong</li>
+          <li class="red">Can we update this model based on current data?</li>
+        </ul>
+      </div>
+    </div></section>
+
+    <section id="datasci-intro-learn" class="slide"><div>
+      <h2>What can we learn from these examples?</h2>
+      <ul>
+        <li>Not everyone can extract the information from data, so called <i class="blue">domain knowledge</i></li>
+        <li>Domain knowledge is not enough, we need the ability to analyze data</li>
+        <li><i class="blue">Model construction and prediction</i></li>
+        <li>But model can be wrong, need a way to <i class="blue">update our model</i> all the time</li>
+      </ul>
+      <p>Anyway, that is pretty much how to conduct a data analysis</p>
+    </div></section>
+
+    <section id="datasci-workflow" class="slide"><div>
+      <img src="pics/datasci_workflow.png" width="85%" alt="">
+      <p class="ref">From <a href="http://www.slideshare.net/euler96/ss-35513599">http://www.slideshare.net/euler96/ss-35513599</a></p>
+    </div></section>
+
+    <section id="datasci-venn" class="slide twocol-ll"><div>
+        <div class="left">
+          <img src="pics/datasci_vd.png" height="450" alt="" />
+        </div><div class="right">
+        <ul>
+          <li>Know your problem</li>
+          <li>Get your hands dirty</li>
+          <li>Make a trained, logical inference</li>
+        </ul>
+        </div>
+        <p class="ref">From <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a></p>
+    </div></section>
 
     <!-- End Slide -->
     <section id='end' class='slide cover shout w'><div>
