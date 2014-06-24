@@ -71,8 +71,13 @@ Interactive
 - |montyhall-vis|_
 - hard to understand: `We Need to Talk About TED`__
 
+- |coastline-pop|_
+
 .. |montyhall-vis| replace:: Monty Hall Explained
 .. _montyhall-vis: http://blog.vctr.me/monty-hall/
+
+.. |coastline-pop| replace:: Coastline County Population
+.. _coastline-pop: http://www.census.gov/dataviz/visualizations/039/
 
 __ http://www.bratton.info/projects/talks/we-need-to-talk-about-ted/
 
@@ -207,6 +212,7 @@ For Myself
 - `p-value and statisical errors`__
 - `UX Crash Course`__
 - `HN like website specific for data science: DataTau`__
+- `Data is Beautiful subreddit on Reddit`__
 
 __ http://9gag.com/gag/aPvVrbR
 __ http://metarabbit.wordpress.com/2013/10/18/why-python-is-better-than-matlab-for-scientific-software/
@@ -217,3 +223,4 @@ __ http://9gag.com/gag/aD0bdvO
 __ http://www.nature.com/news/scientific-method-statistical-errors-1.14700
 __ http://thehipperelement.com/post/75476711614/ux-crash-course-31-fundamentals
 __ http://www.datatau.com/
+__ http://www.reddit.com/r/dataisbeautiful/
