@@ -82,6 +82,8 @@ Interactive
 
 __ http://www.bratton.info/projects/talks/we-need-to-talk-about-ted/
 
+- CSS guru https://pattle.github.io/simpsons-in-css/
+
 
 - FBI Crime Statistics http://nbviewer.ipython.org/github/ChrisBeaumont/crime/blob/master/glue_plotly_fbi.ipynb
 
