@@ -53,6 +53,13 @@
       font-size: 12pt;
     }
 
+    p.left-ref {
+      position: absolute;
+      bottom: 0px;
+      left: 100px;
+      font-size: 12pt;
+    }
+
     ul.tighter {
       margin-bottom: 25px;
     }
@@ -71,15 +78,6 @@
     }
     .blue {
       color: #0376A6;
-    }
-
-    /* source link */
-    div.ref-img p.src-link {
-      position: relative;
-      font-size: 14px;
-      text-align: right;
-      bottom: 10px;
-      right: 10px;
     }
 
     /* two column slides */
@@ -305,7 +303,7 @@
     </div></section>
 
     <section id="data-sci-ex-worldcup" class="slide"><div>
-        <h2 class="tighter">Another example on WorlCup</h2>
+        <h2 class="tighter">Another example on WorldCup prediction</h2>
         <img src="pics/worldcup_goal.jpg" width="80%" alt="">
     </div></section>
 
@@ -370,12 +368,12 @@
       </ul>
     </div></section>
 
-    <section id="ETL-cover" class="slide cover w" ><div>
+    <section id="etl-cover" class="slide cover w" ><div>
         <h2>Data ETL</h2>
         <img src="pics/mid.jpg" alt="">
       </div>
       <style>
-        #ETL-cover h2 {
+        #etl-cover h2 {
           margin: 0px 0 0px;
           color: #D91A3C;
           text-align: left;
@@ -390,19 +388,304 @@
     </section>
 
     <section id="etl-80" class="slide"><div>
-      <h2>So true</h2>  
+      <h2>So true</h2>
       <p><img src="pics/etl_80.png" alt=""></p>
     </div></section>
 
     <section id="etl-intro" class="slide"><div>
       <h2>Data ETL</h2>
       <ul>
-        <li>Something I definitely don't want to talk in a overview section</li>
-        <li>But that's so important </li>
-        <li></li>
-        <li></li>
+        <li>Something I definitely don't want to talk in a overview section,<br>but ETL is so important</li>
+        <li>ETL = Extract, Transformation, Loading</li>
+        <li>The procedure is case-dependent, many spaghetti code here</li>
+        <li>Get <i>very</i> familiar with a lanuage. Go messed with every data by it</li>
+      </ul>
+      <p>R? Python? PHP? C/Java? Javascript? <span class="next">shown by examples</span></p>
+    </div></section>
+
+    <section id="etl-g0v" class="slide twocol-ll"><div>
+      <h2>G0V serves one of best examples</h2>
+      <div class="left">
+        <p class="tighter">And best place to learn data science as well</p>
+        <img src="pics/g0v_cuttree.jpg" width="90%" alt="">
+      </div>
+      <div class="right">
+        <p>Check out <a href="http://g0v.tw/">http://g0v.tw/</a></p>
+        <img src="pics/g0v.jpg" alt="">
+      </div>
+    </div></section>
+
+    <section id="etl-type" class="slide"><div>
+      <h2>ETL data type</h2>
+      <ul>
+        <li>Most are in plain text or numerical</li>
+        <li>Geographic info is harder to handle/get, but we have OpenStreetMap(OSM) and many tools available to help</li>
+        <li>Images and videos are still difficult to deal with</li>
+        <li>I will skip big data issue for now</li>
       </ul>
     </div></section>
+
+    <section id="etl-ex-ocr" class="slide"><div>
+      <h2>鄉民 OCR</h2>
+      <img src="pics/ocr_web.png" alt="">
+      <p>Heavily utilized "Human Learning" (工人智慧)
+        <span class="next red">How?</span></p>
+      <p class="ref">From <a href="http://campaign-finance.g0v.ctiml.tw/cell">政治獻金數位化</a></p>
+    </div></section>
+
+    <section id="etl-ex-ocr-blog" class="slide"><div>
+        <img class="src" src="pics/ocr_blog.png"  width="100%" alt="">
+        <p class="ref">From <a href="http://ronnywang.pixnet.net/blog/post/40488349">http://ronnywang.pixnet.net/blog/post/40488349</a></p>
+    </div></section>
+
+    <section id="etl-ex-ocr-result" class="slide twocol"><div>
+      <h2 class="next">He is using PHP and C :)</h2>
+      <div class="left">
+        <p class="inline">Using Hough Transform in OpenCV</p>
+        <img src="pics/ocr-opencv.png" width="100%" alt="">
+      </div><div class="right">
+        <p class="inline">Divide the table by separate cells</p>
+        <img src="pics/ocr-opencv-result.png" width="100%" alt="">
+      </div>
+      <p class="ref">From <a href="http://ronnywang.pixnet.net/blog/post/40488349">http://ronnywang.pixnet.net/blog/post/40488349</a></p>
+    </div></section>
+
+    <section id="etl-gov-datacenter" class="slide">
+      <div>
+        <h2>G0V even owns a data portal now</h2>
+        <img src="pics/g0v_datacenter.png" width="90%" alt="">
+        <p>Seems just crawling data, what's special?</p>
+        <p class="ref">From <a href="http://data.g0v.tw/">http://data.g0v.tw/</a></p>
+      </div>
+    </section>
+
+    <section id="etl-ex-ecfa" class="slide twocol-ll"><div>
+      <h2>Jump to a more recent event</h2>
+      <div class="left">
+        <img src="pics/efca_relation.png" height="400" alt="">
+      </div>
+      <div class="right">
+        <ul>
+          <li>He used data from g0v.today</li>
+          <li>Show somme political position difference between media</li>
+          <li class="next">So what? <span class="red">Profit gained from such analysis?</span></li>
+        </ul>
+      </div>
+      <p class="ref">From <a href="http://readata.org/datasci/ecfa-and-data-science/">服貿事件 X 資料科學, Johnson Hsieh</a></p>
+    </div></section>
+
+    <section id="etl-ex-ecfa-profit" class="slide twocol"><div>
+      <h2 class="tighter">Not us but in fact someone did</h2>
+      <div class="left">
+        <ul>
+          <li>No comment on whether 自由 and 蘋果 are on <i>people's side</i></li>
+          <li>But they managed to get the traffic of internet news</li>
+          <li>One may think of this as coincidence</li>
+          <li>蘋果 in fact doing some promising try (to become New York Times?)</li>
+        </ul>
+      </div>
+      <div class="right">
+        <img src="pics/ecfa_liberal.jpg" width="100%" alt="">
+        <img src="pics/ecfa_apple.jpg" width="100%" alt="">
+      </div>
+      <p class="left-ref">From <a href="http://technews.tw/2014/03/30/sunflower-boost-apple/">
+「太陽花運動」蘋果、中時閱讀率高下立判, TechNews</a></p>
+    </div></section>
+
+    <section id="etl-ex-ecfa-apple" class="slide"><div>
+        <img src="pics/apple_map.png" width="100%" alt="">
+        <p class="ref">From <a href="http://infographic.appledaily.com.tw/events/sunflower/index.html">新聞打卡地圖，蘋果互動新聞圖表</a></p>
+    </div></section>
+
+    <section id="etl-ex-ecfa-apple-vis" class="slide"><div>
+      <h2>Adopting data visual. tech rapidly</h2>
+      <ul>
+        <li>Using OpenStreetMap and <a href="http://leafletjs.com/">Leaflet</a>, a js library for mobile-friendly interactive map display</li>
+        <li>No Flash. Modern HTML5 design</li>
+        <li>More examples on <a href="http://infographic.appledaily.com.tw/">http://infographic.appledaily.com.tw/</a></li>
+        <li>To set up their strategy (獨立媒體、鄉民用語)</li>
+      </ul>
+    </div></section>
+
+    <section id="etl-summary" class="slide"><div>
+      <h2>Data ETL summary and notes</h2>
+      <ul>
+        <li>Split your ETL into separate stages</li>
+        <li>Use a familiar programming language, which should be trivial to handle following scenarios
+          <ul>
+            <li>Data I/O: CSV/TSV/JSON file parsing; database connection</li>
+            <li>Daata cleaning: Unicode conversion; extraction from certain fields</li>
+            <li>Parsing: time, location data</li>
+            <li>Web scraping (if needed)</li>
+          </ul>
+        </li>
+        <li>No clue? Use R/Python/Scala(for MapReduce)</li>
+      </ul>
+    </div></section>
+
+
+
+    <section id="model-cover" class="slide cover w" ><div>
+        <h2>Analysis(Model)</h2>
+        <img src="pics/mid.jpg" alt="">
+      </div>
+      <style>
+        #model-cover h2 {
+          margin: 0px 0 0px;
+          color: #D91A3C;
+          text-align: left;
+          font-size: 100px;
+          line-height: 1.2em;
+          opacity: 0.8;
+          position: absolute;
+          bottom: 160px;
+          left: 80px;
+        }
+      </style>
+    </section>
+
+    <section id="model-intro" class="slide"><div>
+      <h2>Analysis (Model)</h2>
+      <ul>
+        <li>Give some simplification on how the real world works</li>
+        <li><i class="red">Lots of</i> theory, heuristic solution</li>
+        <li>Main two approach:
+          <ul>
+            <li>Statistics: model centered</li>
+            <li>Machine Learning: data center</li>
+          </ul>
+        </li>
+        <li>No panacea; choose on your own (domain knowledge)</li>
+        <li>Coursera has many elementary/advanced class about data modeling</li>
+      </ul>
+    </div></section>
+
+    <section id="model-main-idea" class="slide"><div>
+      <h2>Some terms need to know</h2>
+      <ul>
+        <li>Supervised learning: classification</li>
+        <li>Unsupervised learning: clustering</li>
+        <li>Model selection and evaluation</li>
+        <li>Dimension reduction</li>
+      </ul>
+    </div></section>
+
+    <section id="stat-is-about" class="slide"><div>
+      <h2 class="tighter">Before we start to speak statistics</h2>
+      <p class="tighter">Statistics is about</p>
+      <ul>
+        <li class="next"><i class="red">Not</i> merely mean and variance <span class="grey">(also known as descriptive statistics)</span></li>
+        <li class="next"><i class="red">Sampling</i> and finding representative samples <span class="grey">(otherwise, biased)</span></li>
+        <li class="next"><i class="red">Modeling</i> for the specific data structure</li>
+        <li class="next"><i class="red">Avoid over fitting</i> or complicated models <span class="grey">(model simplification)</span></li>
+        <li class="next"><i class="red">Insights</i> about data's mean and variance <span class="grey">(or domain knowledge)</span></li>
+      </ul>
+      <figure class="next">
+        <blockquote>
+          <p>Essentially, all models are wrong, but some are useful.</p>
+        </blockquote>
+        <figcaption>George E. P. Box (1987)</figcaption>
+      </figure>
+    </div><style>
+      #stat-is-about ul {
+        margin-bottom: 25px;
+      }
+    </style></section>
+
+    <section id="model-cheatsheet" class="slide"><div>
+      <h2 class="tighter">Choose a model</h2>
+      <img src="pics/model_scikit-learn_cheatsheet.jpg" width="95%" alt="">
+      <p class="ref">From <a href="http://peekaboo-vision.blogspot.tw/2013/01/machine-learning-cheat-sheet-for-scikit.html">Machine Learning Cheat Sheet (for scikit-learn), Peekaboo</a></p>
+    </div></section>
+
+    <section id="model-classifier-prop" class="slide"><div>
+      <h2>Based on their property</h2>
+      <img src="pics/plot_classifier_comparison_1.png" width="100%" alt="">
+      <p class="ref">From <a href="http://scikit-learn.org/stable/auto_examples/plot_classifier_comparison.html">Classifier comparison, scikit-learn</a></p>
+    </div></section>
+
+    <section id="model-cluster-prop" class="slide"><div>
+      <img src="pics/plot_cluster_comparison_1.png" width="90%" alt="">
+      <p class="ref">From <a href="http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html">Cluster comparison, scikit-learn</a></p>
+    </div></section>
+
+    <section id="model-task" class="slide"><div>
+      <h2 class="tighter">同學請我分析的資料</h2>
+      <img src="pics/ggplot2_initial.png" alt="">
+    </div></section>
+
+    <section id="model-comp" class="slide"><div>
+      <h2>模式間的比較</h2>
+      <pre class="language-r">
+<code>model.full <- lm(Speed ~ HP_10 * Time, data=df_sim)
+model.hi <- update(
+  model.full,
+  . ~ . + HP_10 : I(Time^2),  # try `HP_10 * I(Time^2)`
+  data=df_sim
+)
+anova(model.full, model.hi)
+summary(model.hi)</code>
+      </pre>
+    </div></section>
+
+    <section id="model-comp-result" class="slide"><div>
+      <pre class="language-r full-page small">
+<code>anova(...)
+# Analysis of Variance Table
+#
+# Model 1: Speed ~ HP_10 * Time
+# Model 2: Speed ~ HP_10 + Time + HP_10:Time + HP_10:I(Time^2)
+#   Res.Df    RSS Df Sum of Sq      F    Pr(>F)
+# 1    474 269.43
+# 2    472 242.26  2    27.175 26.473 1.269e-11 ***
+summary(...)
+# Coefficients:
+#                  Estimate Std. Error t value Pr(>|t|)
+# (Intercept)      10.09593    0.10485  96.289  < 2e-16 ***
+# HP_101            3.87381    0.15231  25.433  < 2e-16 ***
+# Time              0.06238    0.14318   0.436    0.663
+# HP_101:Time      -0.94099    0.20679  -4.551 6.81e-06 ***
+# HP_100:I(Time^2) -0.18324    0.03914  -4.681 3.73e-06 ***
+# HP_101:I(Time^2)  0.23082    0.04143   5.571 4.27e-08 ***
+</code>
+      </pre>
+    </div></section>
+
+    <section id="model-exp" class="slide twocol"><div>
+      <div class="left">
+        <img width="100%" src="pics/ggplot2_lm.png" alt="">
+        <p align="center">linear model</p>
+      </div>
+      <div class="right">
+        <img width="100%" src="pics/ggplot2_high_order.png" alt="">
+        <p align="center">quadratic model</p>
+      </div>
+    </div></section>
+
+    <section id="model-ex-thoughts" class="slide"><div>
+      <h2>Thoughts about the previous model</h2>
+      <ul>
+        <li>How to test our model? <span class="next">train/test, cross-validation</span></li>
+        <li>What happen if more data come in?
+          <ul class="next">
+            <li>Retrain the model? Feasible if is the case 100M + 100/hr?</li>
+            <li>Can my model handle exception? Ex. A classifier of oranges and apples, but here comes a bananas</li>
+          </ul>
+        </li>
+        <li>Is my model explainable? <br><span class="next">Ex. neural  network, deep learning, PCA dimension reduction</span></li>
+      </ul>
+    </div></section>
+
+    <section id="model-more-ex" class="slide"><div>
+      <h2>More examples (if sufficient time left)</h2>
+      <ul>
+        <li><a href="http://cestlapharm.blogspot.tw/2014/06/evaluation-of-atypical-diet-style-of.html">評估泡麵添加布丁之非典型飲食研究：雙盲、隨機對照交叉試驗</a></li>
+        <li><a href="http://nbviewer.ipython.org/github/myhrvold/MH370_MCMC/blob/master/MH370_MC_ConorMyhrvold-V3.ipynb">Where to Start Seafloor Searching, from the MH370 Markov Chain Monte Carlo (MCMC) Model, Conor L. Myhrvold</a></li>
+        <li><a href="http://www.visiondummy.com/2014/04/curse-dimensionality-affect-classification/">The Curse of Dimensionality in classification</a></li>
+        <li><a href="http://www.tandfonline.com/doi/abs/10.1198/tast.2010.08259">Two Pitfalls in Survival Analyses of Time-Dependent Exposure: A Case Study in a Cohort of Oscar Nominees</a></li>
+      </ul>
+    </div></section>
+
 
     <!-- End Slide -->
     <section id='end' class='slide cover shout w'><div>
