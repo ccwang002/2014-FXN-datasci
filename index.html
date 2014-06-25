@@ -248,8 +248,10 @@
       </ul>
     </div></section>
 
+
+
     <section id="datasci-cover" class="slide cover w" ><div>
-        <h2>Data Science Intro</h2>
+        <h2>I: Data Science Intro</h2>
         <img src="pics/mid.jpg" alt="">
       </div>
       <style>
@@ -274,7 +276,7 @@
 
     <section id="datasci-intro-ex" class="slide"><div>
         <h2>Explained by examples</h2>
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/TCKRe4jJ0Qk" frameborder="0"></iframe>
+        <img src="pics/helicop_vid.png" width="500" alt="">
         <p class="inline next">What can you find from this helicop for car chasing video?</p>
     </div></section>
 
@@ -811,10 +813,16 @@ summary(...)
       </ul>
     </div></section>
 
+    <section id="vis-ex-rap-vocab" class="slide"><div>
+      <h2 class="tighter">The largest vocabularary in hip hop</h2>
+      <img src="pics/rap_vocab.png" height="450" alt="">
+      <p class="ref">From <a href="http://rappers.mdaniels.com.s3-website-us-east-1.amazonaws.com/">http://rappers.mdaniels.com.s3-website-us-east-1.amazonaws.com/</a></p>
+    </div></section>
+
     <section id="how-difficulty" class="slide"><div>
       <h2><span class="red">How</span> interactive?</h2>
       <ul>
-        <li>In the past, one might first think of using GUI framework (QT, Gtk): <i class="blue">iPlot</i></li>
+        <li>In the past, one might first think of using GUI framework (QT, Gtk)</li>
         <li class="next">Real pain for developers,
           <ul>
             <li>inexperience in GUI application devel</li>
@@ -874,10 +882,209 @@ summary(...)
       </ul>
     </div></section>
 
+    <section id="interact-vis-summary" class="slide"><div>
+      <h2>Interactive visualization in web</h2>
+      <ul>
+        <li>HTML5/JS/CSS/SVG really provides many possibilities for <span class="blue">portable interactive functionality</span></li>
+        <li>Mind the <span class="blue">difference between devices.</span> Ex. On touch screen is hard to use "hover" property</li>
+        <li>There are many library available for basic plotting</li>
+        <li>Best interactive experience are mostly customized</li>
+        <li class="red">Either hack JS or use D3.js</li>
+        <li><span class="blue">Support for multiple browser versions</span> is hard</li>
+      </ul>
+    </div></section>
 
-    考量 browser 版本相容
-    客製化 -> d3.js
-    CSS, JS 很熟
+    <section id="css-hard" class="slide twocol-lr"><div>
+      <h2>My feeling about front-end developing</h2>
+      <div class="right">
+        <img src="pics/css_sucks.gif" alt="" />
+      </div>
+      <div class="left">
+        <ul>
+          <li>Debug and testing is non-trivial</li>
+          <li><span class="red">Mozilla Developer Network (MDN)</span> is a good reference for web stuff</li>
+          <li>Not merely about programming, but more about design and UX</li>
+        </ul>
+      </div>
+    </div></section>
+
+    <section id="css-awesome" class="slide"><div>
+      <h2>Hope you enjoy :)</h2>
+      <img src="pics/css_awesome.png" alt="">
+    </div></section>
+
+
+
+    <section id="bigdata-cover" class="slide cover w" ><div>
+        <h2>Big Data Issue</h2>
+        <img src="pics/mid.jpg" alt="">
+      </div>
+      <style>
+        #bigdata-cover h2 {
+          margin: 0px 0 0px;
+          color: #D91A3C;
+          text-align: left;
+          font-size: 100px;
+          line-height: 1.2em;
+          opacity: 0.8;
+          position: absolute;
+          bottom: 160px;
+          left: 80px;
+        }
+      </style>
+    </section>
+
+    <section id="bigdata-teensex" class="slide"><div>
+      <figure>
+        <blockquote>
+          <p><span class="red">Big data is like teenage sex</span>: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it ...</p>
+        </blockquote>
+        <figcaption><a href="http://fb.me/1r54f62oU">Dan Ariely</a></figcaption>
+      </figure>
+      <ul class="next">
+        <li>Most people believe their savior is Map Reduce (Hadoop)</li>
+        <li>I doubt it ... <span class="next">in many ways (lets see)</span></li>
+      </ul>
+    </div></section>
+
+    <section id="bigdata-myth" class="slide"><div>
+      <h2>Do you really need map reduce?</h2>
+      <ul>
+        <li>Word count is a popular helloworld in map reduce framework</li>
+        <li class="next">I've never seen a helloworld program needs over a minute to run</li>
+        <li>High latency can be easily beaten by traditional parallel framework like MPI</li>
+        <li>Often overkill for data below 1TB</li>
+        <li>Similar scenario when it comes to SQL/NoSQL</li>
+      </ul>
+    </div></section>
+
+    <section id="bigdata-spark" class="slide"><div>
+      <h2>Hadoop? Try Spark!</h2>
+      <img src="pics/spark_logo.png" width="300" alt="">
+      <ul>
+        <li>Also try Scala</li>
+        <li>No experience on this, but my friends said it is useful in data cleaning</li>
+      </ul>
+    </div></section>
+
+
+
+    <section id="community-cover" class="slide cover w" ><div>
+        <h2>DataSci Communities</h2>
+        <img src="pics/mid.jpg" alt="">
+      </div>
+      <style>
+        #community-cover h2 {
+          margin: 0px 0 0px;
+          color: #D91A3C;
+          text-align: left;
+          font-size: 100px;
+          line-height: 1.2em;
+          opacity: 0.8;
+          position: absolute;
+          bottom: 160px;
+          left: 80px;
+        }
+      </style>
+    </section>
+
+    <section id="dsp-intro" class="slide"><div>
+      <h2>DSP 資料科學計畫</h2>
+      <ul>
+        <li>Data Science Program</li>
+        <li>Related with Code for Tomorrow</li>
+        <li><a href="http://datasci.co">http://datasci.co</a></li>
+        <li>Commercial training program</li>
+      </ul>
+    </div></section>
+
+
+    <section id="taiwan-r-user" class="slide twocol-ll"><div>
+      <div class="left">
+      <h2 class="tighter">About Taiwan R User Group</h2>
+      <ul>
+        <li>More known a weekly meetup
+          <span class="red">MLDM Monday</span> (<u>M</u>achine <u>L</u>earning and <u>D</u>ata <u>M</u>ining Monday)</li>
+        <li>Topics ranges from
+          <ul>
+            <li><span class="blue">R lang:</span> basic tutorial, Rcpp, quantmod, ggplot2, slidify, knitr, googleVis</li>
+            <li><span class="blue">Statistics, ML/DM:</span> survival analysis, neural network, SVM, regression, nonparam. stat</li>
+            <li><span class="blue">Big Data:</span> Hadoop, MPI</li>
+            <li><span class="blue">PyData:</span> Numpy, Scikit-learn, pandas</li>
+          </ul>
+        </li>
+      </ul>
+      </div><div class="right">
+        <p align="right"><img src="pics/TwR_stat.png" width="80%" alt=""></p>
+      </div>
+    </div></section>
+
+    <section id="taiwan-r-youtube" class="slide"><div>
+      <h2 class="tighter">Meetup record on Youtube</h2>
+      <img src="pics/twR_youtube.png" width="100%" alt="">
+    </div></section>
+
+    <section id="dataconf" class="slide"><div>
+      <h2>台灣資料科學愛好者年會 2014</h2>
+      <ul class="tighter">
+        <li>Aug 30-31, 2014 @中研院人社館</li>
+        <li><a href="http://twconf.data-sci.org/">http://twconf.data-sci.org</a></li>
+        <li>歡迎贊助！</li>
+      </ul>
+      <img src="pics/dataconf.png" alt="">
+    </div></section>
+
+    <section id="pycon-apac" class="slide"><div>
+      <h2>PyCon APAC 2015</h2>
+      <img src="pics/pyconapac.png" width="100%" alt="">
+    </div></section>
+
+    <section id="pyconapac-sponsor" class="slide"><div>
+      <h2 class="tighter">Sponsor of PyCon APAC 2014</h2>
+      <img src="pics/pyconapac_spnosor.png" width="110%" alt="">
+    </div></section>
+
+    <section id="pyconapac-stat" class="slide"><div>
+      <h2 class="tighter">PyCon APAC 2014 Statistics</h2>
+      <img src="pics/pyconapac_stat.png" width="95%" alt="" />
+    </div></section>
+
+    <section id="intro-end" class="slide"><div>
+      <h2>Part I ends</h2>
+      <ul>
+        <li>Questions?</li>
+        <li>Part II will be lots of coding</li>
+        <li>I will use my old slides instead</li>
+        <li>Topics:
+          <ul>
+            <li>R stats, R vis (ggplot2), R vis (interactive)</li>
+            <li>Py parallel</li>
+            <li>Py R connections</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+
+
+    <section id="real-datasci-cover" class="slide cover w" ><div>
+        <h2>II: Data Science in Action</h2>
+        <img src="pics/mid.jpg" alt="">
+      </div>
+      <style>
+        #real-datasci-cover h2 {
+          margin: 0px 0 0px;
+          color: #D91A3C;
+          text-align: left;
+          font-size: 100px;
+          line-height: 1.2em;
+          opacity: 0.8;
+          position: absolute;
+          bottom: 160px;
+          left: 80px;
+        }
+      </style>
+    </section>
 
 
     <!-- End Slide -->
